@@ -25,6 +25,9 @@ dependencies {
 
     // Use JUnit Jupiter Engine for testing.
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.6.2'
+
+    implementation 'org.hibernate:hibernate-core:5.4.23.Final'
+    implementation 'org.mariadb.jdbc:mariadb-java-client:2.7.0'
 }
 
 test {
@@ -33,5 +36,5 @@ test {
 }
 
 gretty {
-    servletContainer = 'jetty9'
+    servletContainer = 'jetty9.3'
 }
