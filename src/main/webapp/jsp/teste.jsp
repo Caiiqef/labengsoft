@@ -7,9 +7,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>404 - Not Found</title>
+        <title>Teste</title>
     </head>
     <body>
-        <h1>Página não encontrada!</h1>
+        <h1>Página de testes!</h1>
     </body>
 </html>

@@ -18,6 +18,7 @@ public class Usuario {
     private  long id;           
     @Column(name="nome")
     private  String nome;       
+    
     public Usuario(){}          
     public String getNome() {   
         return nome;

@@ -17,7 +17,8 @@ public class Http extends HttpServlet{
         
         String path = req.getServletPath();
         ServletContext sc = req.getServletContext();
-		UsuarioService us = new UsuarioService();        
+        UsuarioService us = new UsuarioService();      
+          
         List<Usuario> users = us.list();			
 		req.setAttribute("users", users);
         switch (path){
@@ -26,6 +27,11 @@ public class Http extends HttpServlet{
                     sc.getRequestDispatcher("/jsp/list.jsp").forward(req, res);
                 } catch (Exception e){}
                break;
+            case "/teste":
+                try{
+                    sc.getRequestDispatcher("/jsp/teste.jsp").forward(req, res);
+                } catch (Exception e){}
+                break;
             default:
                 try{
                    sc.getRequestDispatcher("/jsp/notfound.jsp").forward(req, res);
