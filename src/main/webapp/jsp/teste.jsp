@@ -1,22 +1,17 @@
-<%-- 
-    Author     : Caique Fernandes
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Página de Testes</title>
+    <title>Pagina de Teste</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/cover/">
 
     <!-- Bootstrap core CSS -->
-    <link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <!-- Favicons -->
 <link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -27,7 +22,6 @@
 <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
 <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
 <meta name="theme-color" content="#563d7c">
-
 
     <style>
       .bd-placeholder-img {
@@ -45,51 +39,35 @@
         }
       }
     </style>
-    <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
   </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand">APP SERVLET</h3>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="/App Servlet/criar">CRIAR</a>
+        <a class="nav-link" href="/App Servlet/atualizar">ATUALIZAR</a>
+        <a class="nav-link" href="/App Servlet/listar">LISTAR</a>
+        <a class="nav-link" href="/App Servlet/apagar">APAGAR</a>
+      </nav>
+    </div>
+  </header>
 
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="/App Servlet/"> Listar Usuarios <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"> Cadastrar Usuarios </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"> Atualizar Usuarios </a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-        <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+  <main role="main" class="inner cover">
+    <h1 class="cover-heading">Lab. de Engenharia de Software</h1>
+    <p class="lead">Este projeto consiste na modelagem de um prototipo navegavel com insercao de dados.</p>
+    <p class="lead">Link para o Github do aluno - direto para este projeto:</p>
+    <p class="lead">
+      <a href="https://github.com/Caiiqef/labengsoft" class="btn btn-lg btn-secondary">Github</a>
+    </p>
+  </main>
 
-<main role="main" class="container">
-
-  <div class="starter-template">
-    <h1>Bootstrap starter template</h1>
-    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-  </div>
-
-</main><!-- /.container -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script></body>
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+        <p>Projeto criado por <a href="https://www.github.com/caiiqef">Caique Fernandes</a>.</p>
+    </div>
+  </footer>
+</div>
+</body>
 </html>

@@ -24,7 +24,7 @@ public class Http extends HttpServlet{
         switch (path){
             case "/":
                try{
-                    sc.getRequestDispatcher("/jsp/list.jsp").forward(req, res);
+                    sc.getRequestDispatcher("/jsp/index.jsp").forward(req, res);
                 } catch (Exception e){}
                break;
             case "/teste":
@@ -32,6 +32,26 @@ public class Http extends HttpServlet{
                     sc.getRequestDispatcher("/jsp/teste.jsp").forward(req, res);
                 } catch (Exception e){}
                 break;
+            case "/listar":
+                try{
+                    sc.getRequestDispatcher("/jsp/list.jsp").forward(req, res);
+                } catch (Exception e){}
+                break;
+            case "/criar":
+                try{
+                    sc.getRequestDispatcher("/jsp/criar.jsp").forward(req, res);
+                } catch (Exception e){}
+                break;
+            case "/atualizar":
+                try{
+                    sc.getRequestDispatcher("/jsp/atualizar.jsp").forward(req, res);
+                } catch (Exception e){}
+                break;
+            case "/apagar":
+                try{
+                    sc.getRequestDispatcher("/jsp/apagar.jsp").forward(req, res);
+                } catch (Exception e){}
+                break;    
             default:
                 try{
                    sc.getRequestDispatcher("/jsp/notfound.jsp").forward(req, res);

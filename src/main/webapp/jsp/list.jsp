@@ -4,15 +4,18 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <title> Usuarios </title>
+        <title>  Listar Usuarios </title>
         <meta charset="utf-8">
     </head>
-    <body>        
+    <body> 
+        <center>
         <%
 			List<Usuario> users = (List<Usuario>) request.getAttribute("users");
             for(Usuario user: users){
                 out.print("Usuário: " + user.getNome() + "<br/>");                
             } 		
         %>
+        <a class="nav-link" href="/App Servlet/"> Voltar</a>
+        </center>       
     </body>    
 </html>

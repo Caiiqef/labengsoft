@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="pt-br">
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Pagina de Teste</title>
+    <title>Pagina Inicial</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/cover/">
 
@@ -54,13 +54,18 @@
     </div>
   </header>
 
-<main role="main" class="inner cover">
-    <h1 class="cover-heading">Pagina nao encontrada.</h1>
-</main>
+  <main role="main" class="inner cover">
+    <h1 class="cover-heading">Lab. de Engenharia de Software</h1>
+    <p class="lead">Este projeto consiste na modelagem de um prototipo navegavel com insercao de dados.</p>
+    <p class="lead">Link para o Github do aluno - direto para este projeto:</p>
+    <p class="lead">
+      <a href="https://github.com/Caiiqef/labengsoft" class="btn btn-lg btn-secondary">Github</a>
+    </p>
+  </main>
 
   <footer class="mastfoot mt-auto">
     <div class="inner">
-      <p>Projeto criado por <a href="https://www.github.com/caiiqef">Caique Fernandes</a>.</p>
+        <p>Projeto criado por <a href="https://www.github.com/caiiqef">Caique Fernandes</a>.</p>
     </div>
   </footer>
 </div>
