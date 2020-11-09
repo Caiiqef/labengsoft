@@ -4,8 +4,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.UsuarioService;
-import model.Usuario;
+import model.DoencaService;
+import model.Doenca;
+import model.Ocorrencia;
+import model.EpidemService;
 import java.util.List;
 
 @WebServlet({"*.action","/"})
@@ -17,10 +19,10 @@ public class Http extends HttpServlet{
         
         String path = req.getServletPath();
         ServletContext sc = req.getServletContext();
-        UsuarioService us = new UsuarioService();      
+        DoencaService us = new DoencaService();      
           
-        List<Usuario> users = us.list();			
-		req.setAttribute("users", users);
+        List<Doenca> doenca = us.list();			
+		req.setAttribute("doencas", doenca);
         switch (path){
             case "/":
                try{
@@ -42,16 +44,6 @@ public class Http extends HttpServlet{
                     sc.getRequestDispatcher("/jsp/criar.jsp").forward(req, res);
                 } catch (Exception e){}
                 break;
-            case "/atualizar":
-                try{
-                    sc.getRequestDispatcher("/jsp/atualizar.jsp").forward(req, res);
-                } catch (Exception e){}
-                break;
-            case "/apagar":
-                try{
-                    sc.getRequestDispatcher("/jsp/apagar.jsp").forward(req, res);
-                } catch (Exception e){}
-                break;    
             default:
                 try{
                    sc.getRequestDispatcher("/jsp/notfound.jsp").forward(req, res);
@@ -59,4 +51,30 @@ public class Http extends HttpServlet{
         }
         
     }  
+
+    @Override
+    public void doPost(HttpServletRequest req,
+                       HttpServletResponse res) {
+        String path = req.getServletPath();
+        ServletContext sc = req.getServletContext();
+        switch (path) {
+            case "/criar":
+                try {
+                    DoencaService ds = new DoencaService();
+
+                    String nome = req.getParameter("nome");
+                    String sintomas = req.getParameter("sintomas");
+                    ds.create(nome, sintomas);
+                    res.sendRedirect("/App Servlet/listar");
+                } catch (Exception e) {
+                    System.out.println(e.getMessage());
+                }
+                break;
+            default:
+                try {
+                    sc.getRequestDispatcher("/jsp/notfound.jsp").forward(req, res);
+                } catch (Exception e) {
+                }
+        }
+    }
 }

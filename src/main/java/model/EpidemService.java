@@ -5,19 +5,19 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
-public class UsuarioService { 
+public class EpidemService { 
     
-	public List<Usuario> list(){
+	public List<Ocorrencia> list(){
             EntityManagerFactory emf = Persistence.createEntityManagerFactory("persistencia_simples");        
             EntityManager em = emf.createEntityManager();
-            List<Usuario> users = null;
+            List<Ocorrencia> ocorrencia = null;
 
-            Query query = em.createQuery("SELECT u FROM usuario u ");
-            users = query.getResultList();
+            Query query = em.createQuery("SELECT u FROM ocorrencia u");
+            ocorrencia = query.getResultList();
             
             em.close();
             emf.close();
-            return users;            
+            return ocorrencia;            
 	}
 	
 }

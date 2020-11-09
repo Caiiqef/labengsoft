@@ -1,9 +1,4 @@
-/*
-** This file contains the persistence class.
-** Each class attribute is known as persistence attribute
- */
 package model;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,16 +6,18 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 
-@Entity(name="usuario")
-public class Usuario { 
+@Entity(name="doenca")
+public class Doenca { 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="id")
     private  long id;           
     @Column(name="nome")
-    private  String nome;       
+    private String nome;      
+    @Column(name="sintomas") 
+    private String sintomas;
     
-    public Usuario(){}          
+    public Doenca(){}          
     public String getNome() {   
         return nome;
     }
@@ -33,4 +30,10 @@ public class Usuario {
     public void setId(long id) {
         this.id = id;
     }  
+    public String getSintomas(){
+        return sintomas;
+    }
+    public void setSintomas(String sintomas){
+        this.sintomas = sintomas;
+    }
 }

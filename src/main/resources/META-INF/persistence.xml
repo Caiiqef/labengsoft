@@ -9,7 +9,8 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     <description> CRUD </description>
     <!-- Provedor da implementação das especificações de interface do JPA -->
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider> 
-    <class>model.Usuario</class> 
+    <class>model.Doenca</class> 
+    <class>model.Ocorrencia</class>
     <properties>
       <property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver" />
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/Projeto" />
