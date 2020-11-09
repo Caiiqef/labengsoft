@@ -44,17 +44,7 @@
 
   <main role="main" class="inner cover">
     <h1 class="cover-heading">Inserir dados da Doenca</h1>
-    <!-- <p class="lead">Nome da Doenca:</p>
-    <p class="lead">
-      <input type="text" class="lead" id="nomeDoenca" name="nomeDoenca"><br>
-    </p>
-    <p class="lead">Sintomas da Doenca:</p>
-    <p class="lead">
-      <input type="text" class="lead" id="sintomasDoenca" name="sintomasDoenca"><br>
-    </p>
-    <p class="lead">
-      <a href="#" class="btn btn-lg btn-secondary">Cadastrar</a>
-    </p> -->
+    
     <form method="post">
       <label for="nomeDoenca">Nome da Doenca:</label>
       <input type="text" id="nomeDoenca" name="nome"><br><br>
@@ -62,8 +52,6 @@
       <input type="text" id="sintomasDoenca" name="sintomas"><br><br>
       <button type="submit" value="Submit">Cadastrar</button>
     </form>
-
-
 
     <p class="lead">Link para o Github do aluno - direto para este projeto:</p>
     <p class="lead">
