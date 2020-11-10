@@ -8,7 +8,7 @@ import javax.persistence.Query;
 public class DoencaService { 
     
 	public List<Doenca> list(){
-            EntityManagerFactory emf = Persistence.createEntityManagerFactory("persistencia_simples");        
+            EntityManagerFactory emf = Persistence.createEntityManagerFactory("persistencia");        
             EntityManager em = emf.createEntityManager();
             List<Doenca> doenca = null;
 
@@ -22,7 +22,7 @@ public class DoencaService {
     
     
     public void create(String nome, String sintomas) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("persistencia_simples");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("persistencia");
         EntityManager em = emf.createEntityManager();
 
         Doenca d = new Doenca();

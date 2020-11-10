@@ -5,7 +5,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   version="2.1">
   <!-- O nome da unidade de persistência é referenciado na criação da fábrica
        de gerenciadores de entidade.-->  
-  <persistence-unit name="persistencia_simples">
+  <persistence-unit name="persistencia">
     <description> CRUD </description>
     <!-- Provedor da implementação das especificações de interface do JPA -->
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider> 

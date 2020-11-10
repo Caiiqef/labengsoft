@@ -8,7 +8,7 @@ import javax.persistence.Query;
 public class EpidemService { 
     
 	public List<Ocorrencia> list(){
-            EntityManagerFactory emf = Persistence.createEntityManagerFactory("persistencia_simples");        
+            EntityManagerFactory emf = Persistence.createEntityManagerFactory("persistencia");        
             EntityManager em = emf.createEntityManager();
             List<Ocorrencia> ocorrencia = null;
 
