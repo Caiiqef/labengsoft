@@ -4,6 +4,7 @@ Aluno: Caíque Fernandes <br>
 RA: 1460481821013 <br>
 FATEC São José dos Campos <br> 
 Profº Fabrício Galende<br>
+Link do vídeo: https://youtu.be/1cOwo9D6zqY <br>
 
 Ferramentas utilizadas:
   - MySQL / MariaDB
